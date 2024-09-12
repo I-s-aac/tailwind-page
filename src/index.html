@@ -4,26 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tailwind page</title>
+    <title>netflops</title>
     <link rel="stylesheet" href="./output.css">
     <!-- put in terminal to watch tailwind: 
      npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
      -->
 </head>
 
-<body class="text-gray-100 bg-cover bg-fixed bg-center" style="background-image: url(images/tv\ in\ room.jpg);">
+<body class="text-gray-100 bg-cover bg-fixed bg-center" style="background-image: url(netflixbg.jpg);">
     
-    <header class="columns-1 md:columns-3 text-center">
+    <header class="sm:columns-1 text-center md:flex md:justify-between">
+        <img src="images/netflops.png" alt="logo">
         <div>
-            text
-        </div>
-        <div>
-            text
-        </div>
-        <div>
-            text
+            <span class="border border-white p-1">English</span>
+            <span class="bg-red-700 p-1">Sign In</span>
         </div>
     </header>
+
+    <main class="text-center">
+        <h1 class="md:text-6xl">
+            tv shows and stuff
+        </h1>
+        <h3 class="md:text-3xl">
+            watch anywhere at time
+        </h3>
+        <h3 class="md:text-3xl">
+            enter ur email to membership
+        </h3>
+    </main>
 
 </body>
 
