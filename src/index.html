@@ -6,32 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>netflops</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
     <!-- put in terminal to watch tailwind: 
      npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
      -->
 </head>
 
-<body class="text-gray-100 bg-cover bg-fixed bg-center" style="background-image: url(netflixbg.jpg);">
-    
-    <header class="sm:columns-1 text-center md:flex md:justify-between">
-        <img src="images/netflops.png" alt="logo">
-        <div>
-            <span class="border border-white p-1">English</span>
-            <span class="bg-red-700 p-1">Sign In</span>
-        </div>
-    </header>
+<body class="text-white">
+    <img class="backgroundImage" src="images/netflixbg.jpg" alt="background image">
 
-    <main class="text-center">
-        <h1 class="md:text-6xl">
-            tv shows and stuff
-        </h1>
-        <h3 class="md:text-3xl">
-            watch anywhere at time
-        </h3>
-        <h3 class="md:text-3xl">
-            enter ur email to membership
-        </h3>
-    </main>
+    <div class="flex flex-col h-screen">
+
+        <header class="sm:columns-1 text-center flex-col md:flex-row flex justify-center md:justify-between items-center p-3">
+            <img class="h-[10vh]" src="images/logo.png" alt="logo">
+            <div class="flex justify-center">
+                <span class="border border-white p-3 md:mx-3 md:px-12 rounded-md mx-1">English</span>
+                <span class="bg-red-600 border border-red-600 p-3 rounded-md mx-1">Sign In</span>
+            </div>
+        </header>
+
+        <main class="absolute top-0 left-0 h-screen w-screen flex justify-center items-center">
+            <div class="text-center flex flex-col justify-center items-center">
+                <h1 class="text-3xl md:text-6xl mb-3 font-bold">
+                    Unlimited movies, TV shows, and more.
+                </h1>
+                <h3 class="md:text-3xl mb-6 font-bold">
+                    Watch anywhere. Cancel anytime.
+                </h3>
+                <h3 class="md:text-3xl font-bold">
+                    Ready to watch? Enter your email to create or restart your membership.
+                </h3>
+                <form class="mt-6 flex sm:flex-col md:flex-row w-full justify-center items-center">
+                    <input type="email" placeholder="Email address" class="p-3 rounded-l-md md:w-1/4" id="email">
+                    <input type="submit" value="Get started" class="bg-red-600 p-3 rounded-r-md">
+                </form>
+            </div>
+        </main>
+    </div>
 
 </body>
 
