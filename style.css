@@ -19,3 +19,7 @@
     filter: brightness(0.3);
     z-index: 0;
 }
+
+input[type="submit"] {
+    cursor: pointer;
+}
